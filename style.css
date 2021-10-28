@@ -1,1 +1,13 @@
-body{min-height:100%;}#title{text-align:center;font-family:Georgia, serif;font-size:40;}#desc_title{text-align:center;font-family:Georgia, serif;font-size:14;}#iysz{margin:0 600px 16px 0;}#iafg{margin:0 100px 16px 0;}#i6bt{text-align:center;}#iik8o{padding:1px 1px 1px 1px;margin:0 100px 0 100px;}#ip2bl{padding:1px 1px 1px 1px;font-family:Times New Roman, Times, serif;font-size:27px;text-align:center;}.container:active{padding:0 15px 16px 15px;margin:0 0 0 0;flex-direction:row;}#iysz:active{margin:0 10px 16px 0;}#iczs:active{font-size:30px;}#ilwn:active{font-size:30px;font-family:Arial, Helvetica, sans-serif;}html{height:100%;}
+body{min-height:100%;}
+#title{text-align:center;font-family:Georgia, serif;font-size:40;}
+#desc_title{text-align:center;font-family:Georgia, serif;font-size:14;}
+#iysz{margin:0 600px 16px 0;}
+#iafg{margin:0 100px 16px 0;}
+#i6bt{text-align:center;}
+#iik8o{padding:1px 1px 1px 1px;margin:0 100px 0 100px;}
+#maint{padding:1px 1px 1px 1px;font-family:Times New Roman, Times, serif;font-size:27px;text-align:center;}
+.container:active{padding:0 15px 16px 15px;margin:0 0 0 0;flex-direction:row;}
+#iysz:active{margin:0 10px 16px 0;}
+#iczs:active{font-size:30px;}
+#ilwn:active{font-size:30px;font-family:Arial, Helvetica, sans-serif;}
+html{height:100%;}
