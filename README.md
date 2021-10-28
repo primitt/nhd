@@ -16,4 +16,4 @@ Thank you for visiting this page!
 
 
 
-<p font-size="3" font-align="center">©2021 [Primitt](https://github.com/primitt) Coding
+©2021 [Primitt](https://github.com/primitt) Coding
