@@ -22,4 +22,4 @@ Thank you for visiting this page!
 
 
                         
-                    ©2021 [Primitt](https://github.com/primitt) Coding
+                                        ©2021 Primitt Coding
