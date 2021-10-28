@@ -2,7 +2,7 @@
 
 [Home Page](/home)
 
-[In Depth](/in_depth)
+[In Depth](/indepth)
 
 [Credits](/credits)
 
