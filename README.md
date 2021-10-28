@@ -10,4 +10,10 @@
 
 Thank you for visiting this page!
 
-2021 [Primitt](https://github.com/primitt) Coding
+
+
+
+
+
+
+<p font-size="3" font-align="center">©2021 [Primitt](https://github.com/primitt) Coding
