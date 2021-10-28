@@ -4,7 +4,7 @@
 
 [In Depth](/indepth)
 
-[Credits] (/404)
+[Credits] (/notyet)
 
 [Developer Credits](/devcredits)
 
