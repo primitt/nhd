@@ -4,7 +4,7 @@
 
 [In Depth](/indepth)
 
-[Credits](/credits)
+[Developer Credits](/devcredits)
 
 
 Thank you for visiting this page!
