@@ -4,3 +4,10 @@
 [Home Page](/home)
 
 [In Depth](/in_depth)
+
+[Credits](/credits)
+
+
+Thank you for visiting this page!
+
+2021 [Primitt](https://github.com/primitt) Coding
