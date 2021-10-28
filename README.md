@@ -1,30 +1,3 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hello Bulma!</title>
-    <link rel="stylesheet" href="./bulma/bulma.css">
-  </head>
-  <body>
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Hello! Welcome to our <strong>NHD Project Page</strong>
-      </p>
-      <h1 class="subtitle">
-          Click the buttons below to go to the page you want to!
-      </h1>
-      <div class="button">
-        <a class="button is-link is-medium" href=/home>Home Page</a>
-        <br>
-        <a class="button is-link is-medium" href=/indepth>An In Depth Explaination Page!!</a>
-        <br>
-        <a class="button is-link is-medium" href=/devcredits>Developer Credits</a>
-        <br>
-        <a class="button is-link is-medium" href=/credits>Credits Page (Comming Soon)</a>
-      </div>
-    </div>
-  </section>
-  </body>
-</html>
+# Welcome to the Priansh and Idris NHD project main page. Please click this link to start:
+
+[Start](/hyper)
