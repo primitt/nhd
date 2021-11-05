@@ -11,19 +11,5 @@
     window.addEventListener('load', function() {
         pageloader.setAttribute('class', "pageloader is-primary is-bottom-to-top"); // After page is loaded
     });
-    
-    document.addEventListener('DOMContentLoaded', () => { // HAMBURGER MENU
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        if ($navbarBurgers.length > 0) {
-            $navbarBurgers.forEach(el => { // Add a click event on each of burger menus
-                el.addEventListener('click', () => {
-                    const target = el.dataset.target; // Get the target from the "data-target" attribute
-                    const $target = document.getElementById(target);
-                    el.classList.toggle('is-active'); // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                    $target.classList.toggle('is-active');
-                });
-            });
-        }
-    });
 </script>
-<button data-target="pageloader" class="button is-primary">Show Page-loader (3 sec only)</button>
+<button data-target="pageloader is-active" class="button is-primary">Show Page-loader (3 sec only)</button>
