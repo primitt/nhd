@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<link rel="canonical" href="https://wikiki.github.io/elements/pageloader/">
+<link rel="stylesheet" href="https://wikiki.github.io/css/documentation.css?v=201911011043">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://wikiki.github.io/css/documentation.css?v=201911011043">
+<link rel="alternate" type="application/rss+xml" title="Bulma-Extensions" href="https://wikiki.github.io/feed.xml">
+<link rel="stylesheet" type="text/css" href="bulma/bulma-pageloader-min.css">
+<script>
+    let pageloader = document.getElementById("pageloader"); // PAGE LOAGER
+    pageloader.setAttribute('class', "pageloader is-active is-primary is-bottom-to-top"); // Before page is loaded
+    window.addEventListener('load', function() {
+        pageloader.setAttribute('class', "pageloader is-primary is-bottom-to-top"); // After page is loaded
+    });
+    
+    document.addEventListener('DOMContentLoaded', () => { // HAMBURGER MENU
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+        if ($navbarBurgers.length > 0) {
+            $navbarBurgers.forEach(el => { // Add a click event on each of burger menus
+                el.addEventListener('click', () => {
+                    const target = el.dataset.target; // Get the target from the "data-target" attribute
+                    const $target = document.getElementById(target);
+                    el.classList.toggle('is-active'); // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    $target.classList.toggle('is-active');
+                });
+            });
+        }
+    });
+</script>
+<button data-target="pageloader" class="button is-primary">Show Page-loader (3 sec only)</button>
