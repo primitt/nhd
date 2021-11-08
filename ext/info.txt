@@ -1,0 +1,18 @@
+LIMIT IS 1200 WORDS
+USE WORDS PROPERLY
+
+
+Pages:
+
+Main Page = 140 words 
+
+Specific Explanations = 1100 - 1150 words
+
+Background Information = 250 words
+Debate and Diplomacy = 400 words
+Short and Long Term Impacts = 250 words
+Main Significant Impact of the Sanctions = 150 words
+
+Developer Credits (does not count to overall words).
+
+Bibliography (does not count to overall words).
