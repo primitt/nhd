@@ -1,0 +1,26 @@
+Website Project Outline
+By: Idris Vohra and Priansh Mittra
+
+Main Page:
+
+This will be the first and main page of the website, it will be a page with hyperlinks to the separate web page. Our first Main Page will contain our thesis statement that will drive attention from the people who check out the website. It will also contain a few images that support our thesis statement with basic captions.
+The thesis statement is what will bring attention from most to all of our readers, it talks about the nuclear production from Iran, how it affected/supported the economy, and the impacts across the world.
+The images will support the thesis statement by showing the debates and the timelines to understand the period of the sanctions imposed on Iran.
+
+Web Pages (In Depth):
+
+We plan to have 4-5 web pages with all different more in depth topics. These web pages will include questions that most people will ask while learning about US Imposing Sanctions on Iran. These questions will be easy to ask, and we have a proper explanation supporting it. We also have multiple images that support the explanations that will bring even more attention from the readers.
+Our Web Pages will include very specific information that will answer anyone’s questions about our topic.
+On our page, we have multiple questions that we would love to answer.
+Our images would directly support the questions with a sentence or two captions to explain how the image supports our answers.
+Our Pages will be named: Background Information, Debate and Diplomacy which includes the “who, what, why, etc”, Long and Short term Impacts, and the Main Impact of the Sanctions.
+Bibliography/Credits
+This will include the 10-30 sources that we used in our project to create a fascinating website.
+We will include the people who made the website (Idris and Priansh), and their role in the process of building the website.
+The Bibliography will be shown to all readers, and they may want to look at the websites to check what we included in our’s.
+
+Coding Basis:
+
+We plan to use the Bulma CSS Framework to make nice displays and to make the buttons and fonts and backgrounds. We want this website to look nice, so we separated from the complex NHD editor, and took to manually coding the website from scratch. The website will be hosted on 2 different locations. They will both have the same content. The NHD editor has a nice feature so we can import the code into the NHD editor. 
+The coding is going to be in full HTML, if you would like to take a look at the code do ctrl+shift+I, and take a look at it.
+
