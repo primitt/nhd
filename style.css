@@ -21,12 +21,14 @@
     padding-right: 20px;
 }
 .backround-image{
-    background-image: url("https://raw.githubusercontent.com/primitt/nhd/gh-pages/backround.jpeg");
+    background-image: url("https://freellustrustrations.s3.us-east-2.amazonaws.com/free-images/freeimg_45074996043freejpg850.jpg");
     width: 800px;
     height: 500px;
-    opacity: 0.5;
     background-color: #cccccc;
 }
 .padd-button{
     padding-left: 10px;
+}
+.t-color-white{
+    color: white;
 }
