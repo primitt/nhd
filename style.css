@@ -14,7 +14,7 @@
     padding-bottom: 800px;
 }
 .backround-light{
-    background-color: #40b1b8;
+    background-color: #a3faff;
 }
 .title-padding{
     padding-left: 20px;
@@ -26,4 +26,7 @@
     height: 500px;
     opacity: 0.5;
     background-color: #cccccc;
+}
+.padd-button{
+    padding-left: 10px;
 }
