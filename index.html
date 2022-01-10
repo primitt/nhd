@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 <link rel="stylesheet" href="./bulma/bulma-pageloader-min.css">
-<script src="https://raw.githubusercontent.com/tallesairan/FA5PRO/fa6/js/all.js"></script>
-<script src="https://kit.fontawesome.com/eccee547e6.js"></script>
 <link rel="stylesheet" href="./style.css">
 <title>Start Page</title>
 <meta content="NHD Hyperlink and landing page" property="og:title" />
@@ -13,51 +11,121 @@
   property="og:image" />
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  .background-grey-extralight {
+    background-color: #EAEFF0;
+  }
 
+  .blackborder {
+    color: black;
+  }
 
-<body class="has-background-black">
-    <section class="section">
-      <div class="container">
-        <h1 class="is-size-4 t-color-white">
-          Hello! Welcome to our <strong class="t-color-white">NHD Project Page</strong>
-          </p>
-          <h1 class="subtitle t-color-white">
-            Click the buttons below to go to the page you want to!
-          </h1>
-          <div class="button is-small">
-            <a class="button is-small is-link is-medium" href=./home.html>Home Page</a>
-            <br>
-            <div class="dropdown is-hoverable">
-              <div class="dropdown-trigger">
-                <button class="button is-link" aria-haspopup="true" aria-controls="dropdown-menu">
-                  <span>Specific Explanations</span>
-                  <span class="icon is-medium">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                <div class="dropdown-content">
-                  <a href="./backroundinfo.html" class="dropdown-item">
-                    Background Info
-                  </a>
-                  <a href="./dad.html" class="dropdown-item">
-                    Debate and Democracy
-                  </a>
-                  <a href="./mainimpact.html" class="dropdown-item">
-                    Main Impact
-                  </a>
-                  <a href="./lastingimpact.html" class="dropdown-item">
-                    Lasting Impact
-                  </a>
-                </div>
-              </div>
-            </div>
-            <br>
-            <a class="button is-link is-medium" href=./devcredits.html>Developer Credits</a>
-            <br>
-            <a class="button is-link is-medium" href=./bibliography.html>Bibliography</a>
-          </div>
-      </div>
-    </section>
+  hr {
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hr2 {
+    width: 20%;
+    margin-left: 10px;
+    background-color: black;
+  }
+
+  .hr4 {
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+  }
+
+  .hr3 {
+    width: 30%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: aqua;
+  }
+
+  .margins {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .hr3-blackline {
+    width: 30%;
+    height: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+
+    @media screen and (min-width: 1088px) {
+      #my-navbar-menu>div {
+        flex: 1;
+      }
+
+      #my-navbar-menu>div>div {
+        flex: 1;
+        justify-content: center;
+      }
+    }
+  }
+  .hr5{
+    background-color: blue;
+    height: 5px;
+    width: 40px;
+  }
+</style>
+<header>
+  <section class="level-center background-grey-extralight has-text-centered is-centered">
+    <hr class="hr5">
+    <p class="title">
+      <b>US Imposing Sanctions on Iran</b>
+    </p>
+    <hr class="hr5">
+    <br>
+  </section>
+</header>
+<nav class="level has-background-primary-light">
+  <p class="level-item has-text-centered">
+    <a class="link is-info" href="./backroundinfo.html">
+      <span class="icon">
+        <i class="bi bi-question-circle"></i>
+      </span>
+      <span>Background Information</span>
+    </a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info" href="./dad.html">Debate and Democracy</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info" href="./mainimpact.html">Main Impact</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info" href="./devcredits.html">Developer Credits</a>
+  </p>
+  <p class="level-item has-text-centered">
+    <a class="link is-info" href="./credits.html">Written Work</a>
+  </p>
+  <br>
+  <br>
+  <br>
+</nav>
+<body class="is-mobile">
+  <section class="padding backround-light">
+      <h1 class="title has-text-centered">
+          Background Information
+      </h1>
+      <p class="is-size-5 is-size-3-mobile">
+          In response to Iran's continued nuclear proliferation activities, the United States and other countries imposed sanctions to restrict Iran and prevent its progress in prohibited nuclear activities. These sanctions were designed to regulate Iran's prohibited
+          nuclear and missile programs, directly or indirectly impact the Iranian economy in a manner that helps curb its nuclear activities; and encourages Iran to constructively engage in discussions with the countries that have imposed sanctions
+          to fulfill its obligations. The sanctions had several impacts such as a declining trend of Iranian exports from oil products, inflation, economic recession, a plunging valuation of Iranian Rial, increased smuggling, rising unemployment, deteriorating
+          trade relations with the neighboring countries, shortages of medical supplies and isolation from the international community.
+          <br>
+          <br> Iran has continued to produce nuclear weapons to equip their army for War. Iran's nuclear production started to get out of hand, leading to the sanctions that minimized imports/exports, lowered the amount of nuclear weapons, and prompted
+          other nations to stop oil trading with them. The starting of the sanctions was in 1979, following the U.S Embassy in Tehran. Several administrations had aided the U.S with the powerful sanctions.
+          <br>
+          <br> But, what exactly are sanctions? Sanctions are mostly financial penalties that usually target the economy of a specific country. The sanctions may be imposed due to the excessive production of an item, in this case, the nuclear weapons
+          constructed by Iran.
+      </p>
 </body>
