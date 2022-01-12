@@ -13,9 +13,22 @@
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js" as="script">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.8.1/lottie.min.js"></script>
-<div id="pageloader">
-    <div id="loader"></div>
-</div>
+<script src="https://wikiki.github.io/js/main.js?v=201911011043"></script>
+<link rel="stylesheet" href="https://raw.githubusercontent.com/Wikiki/bulma-pageloader/master/dist/css/bulma-pageloader.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script>
+    if ($(".pageloader").length) {
+        $(".pageloader").toggleClass("is-active");
+        $(window).on("load", function() {
+            var pageloaderTimeout = setTimeout(function() {
+                $(".pageloader").toggleClass("is-active");
+                $(".infraloader").toggleClass("is-active");
+                clearTimeout(pageloaderTimeout);
+            }, 700)
+        });
+    }
+</script>
+
 <header class="has-background-black">
     <br>
     <div class="level-center is-centered has-text-centered">
@@ -61,6 +74,7 @@
 </header>
 
 <body class="is-mobile">
+    <div class="pageloader is-black"></div>
     <section class="padding has-background-primary-light">
         <h1 class="title has-text-centered">
             Background Information
@@ -135,37 +149,5 @@
     </a>
 
 </nav>
-<script>
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-    gtag('config', 'UA-142187073-69');
-
-    /* On page loaded */
-    $(window).on('load', function() {
-        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-        if ($navbarBurgers.length > 0) {
-            $navbarBurgers.forEach(el => {
-                el.addEventListener('click', () => {
-                    const target = el.dataset.target;
-                    const $target = document.getElementById(target);
-                    el.classList.toggle('is-active');
-                    $target.classList.toggle('is-active');
-                });
-            });
-        }
-        $("#pageloader").fadeOut();
-    });
-    const pageloader = document.getElementById('loader');
-
-    bodymovin.loadAnimation({
-        wrapper: pageloader,
-        animType: 'svg',
-        autoplay: true,
-        loop: true,
-        path: 'loader.json'
-    });
-</script>
 
 </html>
