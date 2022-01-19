@@ -12,6 +12,43 @@
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<style>
+    /* Add some padding on document's body to prevent the content
+            to go underneath the header and footer */
+
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .fixed-header,
+    .fixed-footer {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .fixed-header {
+        top: -1;
+    }
+
+    .fixed-footer {
+        bottom: 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        /* Center the DIV horizontally */
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
 <header class="fixed-header">
     <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -65,6 +102,7 @@
         });
     </script>
 </header>
+
 <body>
     <section class="has-background-primary-light">
         <br>

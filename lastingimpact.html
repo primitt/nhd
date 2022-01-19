@@ -12,6 +12,43 @@
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<style>
+    /* Add some padding on document's body to prevent the content
+            to go underneath the header and footer */
+
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .fixed-header,
+    .fixed-footer {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .fixed-header {
+        top: -1;
+    }
+
+    .fixed-footer {
+        bottom: 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        /* Center the DIV horizontally */
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
 <header class="fixed-header">
     <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -65,6 +102,7 @@
         });
     </script>
 </header>
+
 <body class="has-background-primary-light">
     <div class="title has-text-centered is-size-2-mobile">
         Lasting Impact
@@ -82,21 +120,21 @@
     <div class="content has-text-centered">
         <p>
             Website created by <strong><a href="https://github.com/primitt">primitt</a></strong> using the <strong><a
-          href="https://bulma.io">Bulma CSS Framework</a></strong>
+                    href="https://bulma.io">Bulma CSS Framework</a></strong>
         </p>
     </div>
 </footer>
 <nav class="bd-docs-pagination bd-pagination-links level" style="margin:20px">
     <a class="button bd-fat-button is-primary is-light bd-pagination-next" href="./mainimpact.html" title="Next Page">
-    <i>←</i>
+        <i>←</i>
         <span>
-      <b>Short Term Impact&nbsp;</b>
-      </span>
+            <b>Short Term Impact&nbsp;</b>
+        </span>
     </a>
     <a class="button bd-fat-button is-primary is-light bd-pagination-next" href="./credits.html" title="Next Page">
         <span>
-      <b>Sources&nbsp;</b>
-      </span>
+            <b>Sources&nbsp;</b>
+        </span>
         <i>→</i>
     </a>
 </nav>

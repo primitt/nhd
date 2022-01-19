@@ -12,6 +12,43 @@
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<style>
+    /* Add some padding on document's body to prevent the content
+            to go underneath the header and footer */
+
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .fixed-header,
+    .fixed-footer {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .fixed-header {
+        top: -1;
+    }
+
+    .fixed-footer {
+        bottom: 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        /* Center the DIV horizontally */
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
 <header class="fixed-header">
     <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
@@ -75,9 +112,15 @@
         </div>
         <div class="columns">
             <div class="column is-one-halfs is-size-5">
-                There were plenty of politicians that aided the US to continue the process of sanctions. The Department of State’s Office of Economic Sanctions Policy and Implementation, Jimmy Carter, Ronald Regean, Bill Clinton, George Bush, Barack Obama, Donald Trump,
-                countries such as Russia, US Congress, Shah Mohammad Reza Pahlavi. The sanctions were sent from the US to Iran, including overseas. Iran had been the most affected from the operation as their nuclear production had significantly dropped,
-                and their main source of income was oil, which was also reduced, hence economic sanctions. The sanctions had started in 1979 to present day by the US after hearing that Iran’s nuclear production was getting out of hand.
+                There were plenty of politicians that aided the US to continue the process of sanctions. The Department
+                of State’s Office of Economic Sanctions Policy and Implementation, Jimmy Carter, Ronald Regean, Bill
+                Clinton, George Bush, Barack Obama, Donald Trump,
+                countries such as Russia, US Congress, Shah Mohammad Reza Pahlavi. The sanctions were sent from the US
+                to Iran, including overseas. Iran had been the most affected from the operation as their nuclear
+                production had significantly dropped,
+                and their main source of income was oil, which was also reduced, hence economic sanctions. The sanctions
+                had started in 1979 to present day by the US after hearing that Iran’s nuclear production was getting
+                out of hand.
                 <p>
             </div>
             <div class="column">
@@ -93,8 +136,12 @@
 
         <div class="columns">
             <div class="column is-one-halfs is-size-5">
-                US Imposed sanctions on Iran due to its nuclear proliferation activities. Radical students had seized the American Embassy in Tehran and took hostages. President Carter imposed an escalating series of sanctions, beginning with a ban on Iranian oil imports,
-                followed by blocking all $12 billion of Iranian government assets in the United States. In 1996, Congress passed the Iran and Libya Sanctions Act, (ILSA) which restricted foreign companies from importing oil and gas from Iran, which was
+                US Imposed sanctions on Iran due to its nuclear proliferation activities. Radical students had seized
+                the American Embassy in Tehran and took hostages. President Carter imposed an escalating series of
+                sanctions, beginning with a ban on Iranian oil imports,
+                followed by blocking all $12 billion of Iranian government assets in the United States. In 1996,
+                Congress passed the Iran and Libya Sanctions Act, (ILSA) which restricted foreign companies from
+                importing oil and gas from Iran, which was
                 the main source of the Iranian government’s income.
                 </p>
                 <br>
@@ -105,30 +152,35 @@
                 <br>
                 <br>
                 <p class="is-italic">
-                    <b> A graph showing its oil production during the sanctions.</b> Source: <a href="en.raidofarda.com">Raido
-            Farda</a>
+                    <b> A graph showing its oil production during the sanctions.</b> Source: <a
+                        href="en.raidofarda.com">Raido
+                        Farda</a>
                 </p>
             </div>
         </div>
         <div class="columns">
             <div class="column is-two-thirds">
-                <p class="is-size-5"> The UN officials disagreed on the official reason why they imposed sanctions on Iran, but many believe it was to stop Iran participating in nuclear activities. In 2013 the UN officials started to discuss compromises for Iran to stop building
-                    nuclear weapons. Neighboring countries were told to stop trading oil with Iran, said by Clinton, due to the excessive production of nuclear weapons.
+                <p class="is-size-5"> The UN officials disagreed on the official reason why they imposed sanctions on
+                    Iran, but many believe it was to stop Iran participating in nuclear activities. In 2013 the UN
+                    officials started to discuss compromises for Iran to stop building
+                    nuclear weapons. Neighboring countries were told to stop trading oil with Iran, said by Clinton, due
+                    to the excessive production of nuclear weapons.
                     <br>
                     <br>
                     <img src="./images/GDPgrowth.png" width="300px" hight="200px">
                     <br>
                     <br>
-                    <p class="is-size-6 is-italic">
-                        <b>Iran’s GDP Growth/Decline
-            <br>
-            during the sanctions.</b>
-                    </p>
-                    <br>
+                <p class="is-size-6 is-italic">
+                    <b>Iran’s GDP Growth/Decline
+                        <br>
+                        during the sanctions.</b>
+                </p>
+                <br>
                 </p>
             </div>
             <div class="column is-one-half is-size-6">
-                <img src="https://raw.githubusercontent.com/primitt/nhd/gh-pages/images/firstphaseiransanc.png" width="350px">
+                <img src="https://raw.githubusercontent.com/primitt/nhd/gh-pages/images/firstphaseiransanc.png"
+                    width="350px">
                 <br>
                 <br>
                 <b>The US had a great hold on the economy's imports/exports.</b>
@@ -137,9 +189,14 @@
 
         </div>
         </div>
-        <p class="is-size-5">The UN and US have set a precedent to curb Iran’s use of nuclear energy to build weapons of mass destruction possessed by Iran. These sanctions were needed to ensure that no country grew so powerful that it became a threat to the international
-            community in the event of a war. As a consequence of the economic sanctions imposed on Iran their GDP growth decreased by around 2 percent a year. The sanctions on Iran have prompted many oil companies to stop trading with Iran and have also
-            caused a decline in oil production due to reduced access to technologies needed to improve their oil production efficiency.</p>
+        <p class="is-size-5">The UN and US have set a precedent to curb Iran’s use of nuclear energy to build weapons of
+            mass destruction possessed by Iran. These sanctions were needed to ensure that no country grew so powerful
+            that it became a threat to the international
+            community in the event of a war. As a consequence of the economic sanctions imposed on Iran their GDP growth
+            decreased by around 2 percent a year. The sanctions on Iran have prompted many oil companies to stop trading
+            with Iran and have also
+            caused a decline in oil production due to reduced access to technologies needed to improve their oil
+            production efficiency.</p>
 
         <br>
         <br>
@@ -153,7 +210,8 @@
                 </p>
             </div>
             <div style="margin-right:20px;">
-                <iframe src="https://drive.google.com/file/d/1_7ahazXUa1X09XY3eGU69w0Fu8S_pOGa/preview" width="480" height="270" allow="autoplay"></iframe>
+                <iframe src="https://drive.google.com/file/d/1_7ahazXUa1X09XY3eGU69w0Fu8S_pOGa/preview" width="480"
+                    height="270" allow="autoplay"></iframe>
                 <br>
                 <br>
                 <p class="is-italic is-size-6">
@@ -162,9 +220,11 @@
             </div>
         </nav>
         <div class="content">
-            <blockquote class="is-size-5">“This resolution will put in place the toughest sanctions ever faced by the Iranian government ... It sends an unmistakable message about the international community’s commitment to <b>stopping the spread of
-          nuclear
-          weapons.”</b></blockquote>
+            <blockquote class="is-size-5">“This resolution will put in place the toughest sanctions ever faced by the
+                Iranian government ... It sends an unmistakable message about the international community’s commitment
+                to <b>stopping the spread of
+                    nuclear
+                    weapons.”</b></blockquote>
             <p class="is-size-6 is-italic">
                 - President Barak Obama, 2010
             </p>
@@ -178,21 +238,22 @@
     <div class="content has-text-centered">
         <p>
             Website created by <strong><a href="https://github.com/primitt">primitt</a></strong> using the <strong><a
-          href="https://bulma.io">Bulma CSS Framework</a></strong>
+                    href="https://bulma.io">Bulma CSS Framework</a></strong>
         </p>
     </div>
 </footer>
 <nav class="bd-docs-pagination bd-pagination-links level" style="margin:20px">
-    <a class="button bd-fat-button is-primary is-light bd-pagination-next" href="./backroundinfo.html" title="Next Page">
-    <i>←</i>
+    <a class="button bd-fat-button is-primary is-light bd-pagination-next" href="./backroundinfo.html"
+        title="Next Page">
+        <i>←</i>
         <span>
-      <b>Background Information&nbsp;</b>
-      </span>
+            <b>Background Information&nbsp;</b>
+        </span>
     </a>
     <a class="button bd-fat-button is-primary is-light bd-pagination-next" href="./mainimpact.html" title="Next Page">
         <span>
-      <b>Short Term Impact&nbsp;</b>
-      </span>
+            <b>Short Term Impact&nbsp;</b>
+        </span>
         <i>→</i>
     </a>
 </nav>

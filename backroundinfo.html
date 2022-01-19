@@ -18,6 +18,43 @@
 <link rel="stylesheet"
     href="https://raw.githubusercontent.com/Wikiki/bulma-pageloader/master/dist/css/bulma-pageloader.min.css">
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<style>
+    /* Add some padding on document's body to prevent the content
+        to go underneath the header and footer */
+
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+
+    .fixed-header,
+    .fixed-footer {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .fixed-header {
+        top: -1;
+    }
+
+    .fixed-footer {
+        bottom: 0;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        /* Center the DIV horizontally */
+    }
+
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+</style>
 <header class="fixed-header">
     <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
