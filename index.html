@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 <link rel="stylesheet" href="./bulma/bulma-pageloader-min.css">
 <link rel="canonical" href="https://wikiki.github.io/elements/pageloader/">
-<script src="https://kit.fontawesome.com/eccee547e6.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="./style.css">
 <link rel="icon" type="image/png" href="./image/favicon_nhd.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +10,8 @@
 <meta content="NHD Project by Idris Vohra and Priansh Mittra" property="og:description" />
 <meta content="https://nhd.primitt.tk/home" property="og:url" />
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 <header>
     <section class="level-center background-grey-extralight has-text-centered is-centered">
         <br>
@@ -137,7 +138,93 @@
         <br>
     </div>
 </header>
+<header class="fixed-header">
+    <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item is-active" href="/">
+                <img src="./logo-transparent-black.png" height="172"> &nbsp;Home
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbar" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    <i class="fal fa-house"></i>
+                    </i>&nbsp;Home
+                </a>
+                <a class="navbar-item" href="./backroundinfo.html">
+                    <i class="fas fa-send-backward"></i>&nbsp;Background Information
+                </a>
+                <a class="navbar-item" href="./dad.html">
+                    <i class="fal fa-question-circle"></i>&nbsp;Debate and Democracy
+                </a>
+                <a class="navbar-item" href="./mainimpact.html">
+                    <i class="fal fa-calendar-day"></i>&nbsp;Short Term Impact
+                </a>
+                <a class="navbar-item" href="./lastingimpact.html">
+                    <i class="fas fa-calendar-week"></i>&nbsp;Legacy
+                </a>
+                <a class="navbar-item" href="./credits.html">
+                    <i class="far fa-receipt"></i>&nbsp;Sources and Credits
+                </a>
+                <a class="navbar-item" href="./devcredits.html">
+                    <i class="far fa-code"></i>&nbsp;About
+                </a>
+            </div>
+            <div class="navbar-end buttons has-addons">
+                <a class="navbar-item" href="https://twitter.com/">
+                    <i class="fab fa-lg fa-twitter"></i></a>
+                </li>
+                </a>
+                <a class="navbar-item" href="https://www.reddit.com/">
+                    <i class="fab fa-lg fa-reddit"></i></a>
+                </li>
+                </a>
+                <a class="navbar-item" href="https://discord.gg">
+                    <i class="fab fa-lg fa-discord"></i></a>
+                </li>
+                </a>
+                <a class="navbar-item" href="https://github.com/revoxhere/">
+                    <i class="fab fa-lg fa-github"></i></a>
+                </li>
+                </a>
+                <div class="navbar-item">
+                    <div class="buttons">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
 
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+</header>
 
 
 <body class="is-mobile">
@@ -153,14 +240,15 @@
                     </blockquote>
                     <br>
                     <blockquote>
-                        “We're <b>not afraid of sanctions</b>. We're not afraid of military invasion. What <b>frightens us is the
-                        invasion of western immorality.</b>”
+                        “We're <b>not afraid of sanctions</b>. We're not afraid of military invasion. What <b>frightens
+                            us is the
+                            invasion of western immorality.</b>”
                         ― Ruhollah Khomeini
 
                     </blockquote>
                 </div>
             </div>
-            
+
             <div class="column has-text-centered">
                 <img src="https://raw.githubusercontent.com/primitt/nhd/gh-pages/images/unnamed%20(7).png"
                     width="560px">
