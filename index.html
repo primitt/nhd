@@ -12,6 +12,64 @@
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<header class="is-mobile">
+    <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
+        <div id="navbar" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="/">
+                    <i class="fal fa-house"></i>
+                    </i>&nbsp;Home
+                </a>
+                <a class="navbar-item" href="./backroundinfo.html">
+                    <i class="fas fa-send-backward"></i>&nbsp;Background Information
+                </a>
+                <a class="navbar-item" href="./dad.html">
+                    <i class="fal fa-question-circle"></i>&nbsp;Debate and Democracy
+                </a>
+                <a class="navbar-item" href="./mainimpact.html">
+                    <i class="fal fa-calendar-day"></i>&nbsp;Short Term Impact
+                </a>
+                <a class="navbar-item" href="./lastingimpact.html">
+                    <i class="fas fa-calendar-week"></i>&nbsp;Legacy
+                </a>
+                <a class="navbar-item" href="./credits.html">
+                    <i class="far fa-receipt"></i>&nbsp;Sources and Credits
+                </a>
+                <a class="navbar-item" href="./devcredits.html">
+                    <i class="far fa-code"></i>&nbsp;About
+                </a>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
+
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+
+        });
+    </script>
+</header>
 
 <header>
     <section class="level-center background-grey-extralight has-text-centered is-centered">
@@ -90,65 +148,6 @@
         width: 40px;
     }
 </style>
-<header>
-    <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
-        <div id="navbar" class="navbar-menu">
-            <div class="navbar-start">
-                <a class="navbar-item" href="/">
-                    <i class="fal fa-house"></i>
-                    </i>&nbsp;Home
-                </a>
-                <a class="navbar-item" href="./backroundinfo.html">
-                    <i class="fas fa-send-backward"></i>&nbsp;Background Information
-                </a>
-                <a class="navbar-item" href="./dad.html">
-                    <i class="fal fa-question-circle"></i>&nbsp;Debate and Democracy
-                </a>
-                <a class="navbar-item" href="./mainimpact.html">
-                    <i class="fal fa-calendar-day"></i>&nbsp;Short Term Impact
-                </a>
-                <a class="navbar-item" href="./lastingimpact.html">
-                    <i class="fas fa-calendar-week"></i>&nbsp;Legacy
-                </a>
-                <a class="navbar-item" href="./credits.html">
-                    <i class="far fa-receipt"></i>&nbsp;Sources and Credits
-                </a>
-                <a class="navbar-item" href="./devcredits.html">
-                    <i class="far fa-code"></i>&nbsp;About
-                </a>
-            </div>
-        </div>
-        </div>
-    </nav>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-
-            // Get all "navbar-burger" elements
-            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-            // Check if there are any navbar burgers
-            if ($navbarBurgers.length > 0) {
-
-                // Add a click event on each of them
-                $navbarBurgers.forEach(el => {
-                    el.addEventListener('click', () => {
-
-                        // Get the target from the "data-target" attribute
-                        const target = el.dataset.target;
-                        const $target = document.getElementById(target);
-
-                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                        el.classList.toggle('is-active');
-                        $target.classList.toggle('is-active');
-
-                    });
-                });
-            }
-
-        });
-    </script>
-</header>
-
 
 <body class="is-mobile">
     <section class="padding">
