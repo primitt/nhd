@@ -18,18 +18,6 @@
 <link rel="stylesheet"
     href="https://raw.githubusercontent.com/Wikiki/bulma-pageloader/master/dist/css/bulma-pageloader.min.css">
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-<script>
-    if ($(".pageloader").length) {
-        $(".pageloader").toggleClass("is-active");
-        $(window).on("load", function () {
-            var pageloaderTimeout = setTimeout(function () {
-                $(".pageloader").toggleClass("is-active");
-                $(".infraloader").toggleClass("is-active");
-                clearTimeout(pageloaderTimeout);
-            }, 700)
-        });
-    }
-</script>
 
 <header class="has-background-black">
     <br>
@@ -85,7 +73,7 @@
     <div class="pageloader is-black"></div>
     <section class="padding has-background-primary-light">
         <h1 class="title has-text-centered">
-            Background Information
+            History of Iran
         </h1>
         <div class="columns">
             <div class="column is-one-half is-size-5">
