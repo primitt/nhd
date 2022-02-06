@@ -10,148 +10,141 @@
 <meta content="NHD Project by Idris Vohra and Priansh Mittra" property="og:description" />
 <meta content="https://nhd.primitt.tk/home" property="og:url" />
 <meta content="#43B581" data-react-helmet="true" name="theme-color" />
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 <style>
-  /* Add some padding on document's body to prevent the content
+    /* Add some padding on document's body to prevent the content
           to go underneath the header and footer */
-
-  body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-  }
-
-  .fixed-header,
-  .fixed-footer {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-  }
-
-  .fixed-header {
-    top: -1;
-  }
-
-  .fixed-footer {
-    bottom: 0;
-  }
-
-  .container {
-    width: 80%;
-    margin: 0 auto;
-    /* Center the DIV horizontally */
-  }
-
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 7px 25px;
-    display: inline-block;
-  }
+    
+    body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    
+    .fixed-header,
+    .fixed-footer {
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+    }
+    
+    .fixed-header {
+        top: -1;
+    }
+    
+    .fixed-footer {
+        bottom: 0;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        /* Center the DIV horizontally */
+    }
+    
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
 </style>
 <header class="fixed-header">
-  <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
-        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navbar" class="navbar-menu">
-      <a class="navbar-item" href="/"> <i class="fal fa-house"></i> </i>&nbsp;Home </a> <a class="navbar-item"
-        href="./backroundinfo.html"> <i class="fas fa-send-backward"></i>&nbsp;Background Information </a> <a
-        class="navbar-item" href="./dad.html"> <i class="fal fa-question-circle"></i>&nbsp;Debate and Diplomacy
-      </a> <a class="navbar-item" href="./mainimpact.html"> <i class="fal fa-calendar-day"></i>&nbsp;Short Term
-        Impact </a> <a class="navbar-item" href="./lastingimpact.html"> <i class="fas fa-calendar-week"></i>&nbsp;Legacy
-      </a> <a class="navbar-item" href="./credits.html"> <i class="far fa-receipt"></i>&nbsp;Sources and Credits </a> <a
-        class="navbar-item" href="./devcredits.html"> <i class="far fa-code"></i>&nbsp;About </a>
-    </div>
-    <div class="navbar-end buttons has-addons">
-      <div class="navbar-item">
-        <div class="buttons">
+    <nav class="navbar has-background-white" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+            </a>
         </div>
-      </div>
-    </div>
-    </div>
-  </nav>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
+        <div id="navbar" class="navbar-menu">
+            <a class="navbar-item" href="/"> <i class="fal fa-house"></i> </i>&nbsp;Home </a>
+            <a class="navbar-item" href="./backroundinfo.html"> <i class="fas fa-send-backward"></i>&nbsp;Background Information </a>
+            <a class="navbar-item" href="./dad.html"> <i class="fal fa-question-circle"></i>&nbsp;Debate and Diplomacy
+            </a>
+            <a class="navbar-item" href="./mainimpact.html"> <i class="fal fa-calendar-day"></i>&nbsp;Short Term Impact </a>
+            <a class="navbar-item" href="./lastingimpact.html"> <i class="fas fa-calendar-week"></i>&nbsp;Legacy
+            </a>
+            <a class="navbar-item" href="./credits.html"> <i class="far fa-receipt"></i>&nbsp;Sources and Credits </a>
+            <a class="navbar-item" href="./devcredits.html"> <i class="far fa-code"></i>&nbsp;About </a>
+        </div>
+        <div class="navbar-end buttons has-addons">
+            <div class="navbar-item">
+                <div class="buttons">
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
 
-      // Get all "navbar-burger" elements
-      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
-      // Check if there are any navbar burgers
-      if ($navbarBurgers.length > 0) {
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
 
-        // Add a click event on each of them
-        $navbarBurgers.forEach(el => {
-          el.addEventListener('click', () => {
+                // Add a click event on each of them
+                $navbarBurgers.forEach(el => {
+                    el.addEventListener('click', () => {
 
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
+                        // Get the target from the "data-target" attribute
+                        const target = el.dataset.target;
+                        const $target = document.getElementById(target);
 
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle('is-active');
-            $target.classList.toggle('is-active');
+                        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                        el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
 
-          });
+                    });
+                });
+            }
+
         });
-      }
-
-    });
-  </script>
+    </script>
 </header>
 
 <body class="has-background-primary-light">
-  <div class="title has-text-centered">
-    <p>Bibliography</p>
-  </div>
-  <div class="subtitle has-text-centered">
-    All citations in MLA format
-  </div>
-  <div class="is-size-10 box">
-    <p>
-      Blakemore, Erin. “U.S.-Iran Tensions: From Political Coup to Hostage Crisis to Drone Strikes.” History.com,
-      A&E Television Networks, 8 May 2018, <a
-        href="https://www.history.com/news/iran-nuclear-deal-sanctions-facts-hostage-crisis">
+    <div class="title has-text-centered">
+        <p>Bibliography</p>
+    </div>
+    <div class="subtitle has-text-centered">
+        All citations in MLA format
+    </div>
+    <div class="is-size-10 box" style="margin: 10px">
+        <p>
+            Blakemore, Erin. “U.S.-Iran Tensions: From Political Coup to Hostage Crisis to Drone Strikes.” History.com, A&E Television Networks, 8 May 2018, <a href="https://www.history.com/news/iran-nuclear-deal-sanctions-facts-hostage-crisis">
         https://www.history.com/news/iran-nuclear-deal-sanctions-facts-hostage-crisis</a>
-    </p>
-    <br>
-    <p>
-      “A Brief History of Sanctions on Iran.” Atlantic Council, 8 May 2018,
-      <a href="https://www.atlanticcouncil.org/blogs/new-atlanticist/a-brief-history-of-sanctions-on-iran">
+        </p>
+        <br>
+        <p>
+            “A Brief History of Sanctions on Iran.” Atlantic Council, 8 May 2018,
+            <a href="https://www.atlanticcouncil.org/blogs/new-atlanticist/a-brief-history-of-sanctions-on-iran">
         https://www.atlanticcouncil.org/blogs/new-atlanticist/a-brief-history-of-sanctions-on-iran</a>
-    </p>
-    <br>
-    <p>
-      Hewitt, Kate, and Richard Nephew. “How the Iran Hostage Crisis Shaped the US Approach to Sanctions.”
-      Brookings, Brookings, 12 Mar. 2019,
-      <a
-        href="http://www.brookings.edu/blog/order-from-chaos/2019/03/12/how-the-iran-hostage-crisis-shaped-the-us-approach-to-sanctions/">
+        </p>
+        <br>
+        <p>
+            Hewitt, Kate, and Richard Nephew. “How the Iran Hostage Crisis Shaped the US Approach to Sanctions.” Brookings, Brookings, 12 Mar. 2019,
+            <a href="http://www.brookings.edu/blog/order-from-chaos/2019/03/12/how-the-iran-hostage-crisis-shaped-the-us-approach-to-sanctions/">
         http://www.brookings.edu/blog/order-from-chaos/2019/03/12/how-the-iran-hostage-crisis-shaped-the-us-approach-to-sanctions</a>
-    </p>
+        </p>
+        <br>
+        <p>
+            “Iran Sanctions - United States Department of State.” U.S. Department of State, U.S. Department of State, 17 Sept. 2021,
+            <a href="http://www.state.gov/iran-sanctions">http://www.state.gov/iran-sanctions</a>
+        </p>
+        <br>
+        <p>
+            Psaledakis, Daphne, and Humeyra Pamuk. “U.S. Imposes Sweeping Sanctions on Iran, Targets Khamenei-Linked Foundation.” Reuters, Thomson Reuters, 18 Nov. 2020
+            <a href="http://www.reuters.com/article/usa-iran-sanctions-int/u-s-imposes-sweeping-sanctions-on-iran-targets-khamenei-linked-foundation-idUSKBN27Y262">http://www.reuters.com/article/usa-iran-sanctions-int/u-s-imposes-sweeping-sanctions-on-iran-targets-khamenei-linked-foundation-idUSKBN27Y262</a>
+        </p>
+        <br>
+        <p>
+            “U.S. Sanctions.” The Iran Primer, 11 Oct. 2010
+            <a href="http://www.iranprimer.usip.org/resource/us-sanctions">http://www.iranprimer.usip.org/resource/us-sanctions</a>
+        </p>
+    </div>
     <br>
-    <p>
-      “Iran Sanctions - United States Department of State.” U.S. Department of State, U.S. Department of State, 17
-      Sept. 2021,
-      <a href="http://www.state.gov/iran-sanctions">http://www.state.gov/iran-sanctions</a>
-    </p>
-    <br>
-    <p>
-      Psaledakis, Daphne, and Humeyra Pamuk. “U.S. Imposes Sweeping Sanctions on Iran, Targets Khamenei-Linked
-      Foundation.” Reuters, Thomson Reuters, 18 Nov. 2020
-      <a
-        href="http://www.reuters.com/article/usa-iran-sanctions-int/u-s-imposes-sweeping-sanctions-on-iran-targets-khamenei-linked-foundation-idUSKBN27Y262">http://www.reuters.com/article/usa-iran-sanctions-int/u-s-imposes-sweeping-sanctions-on-iran-targets-khamenei-linked-foundation-idUSKBN27Y262</a>
-    </p>
-    <br>
-    <p>
-      “U.S. Sanctions.” The Iran Primer, 11 Oct. 2010
-      <a
-        href="http://www.iranprimer.usip.org/resource/us-sanctions">http://www.iranprimer.usip.org/resource/us-sanctions</a>
-    </p>
-  </div>
-  <br>
-  <!--
+    <!--
     <nav class="level">
       <div class="level-item">
         <div class="buttons">
@@ -166,26 +159,26 @@
 </body>
 
 <footer class="footer has-background-primary-light">
-  <div class="content has-text-centered">
-    <p>
-      Website created by <strong><a href="https://github.com/primitt">primitt</a></strong> using the <strong><a
+    <div class="content has-text-centered">
+        <p>
+            Website created by <strong><a href="https://github.com/primitt">primitt</a></strong> using the <strong><a
           href="https://bulma.io">Bulma CSS Framework</a></strong>
-    </p>
-  </div>
+        </p>
+    </div>
 </footer>
 <nav class="bd-docs-pagination bd-pagination-links level" style="margin:20px">
-  <a class="button bd-fat-button is-primary is-light bd-pagination-next" href="./lastingimpact.html" title="Next Page">
-    <i>←</i>
-    <span>
+    <a class="button bd-fat-button is-primary is-light bd-pagination-next" href="./lastingimpact.html" title="Next Page">
+        <i>←</i>
+        <span>
       <b>Legacy&nbsp;</b>
     </span>
-  </a>
-  <a class="button bd-fat-button is-primary is-light bd-pagination-next" href="./devcredits.html" title="Next Page">
-    <span>
+    </a>
+    <a class="button bd-fat-button is-primary is-light bd-pagination-next" href="./devcredits.html" title="Next Page">
+        <span>
       <b>About&nbsp;</b>
     </span>
-    <i>→</i>
-  </a>
+        <i>→</i>
+    </a>
 </nav>
 <br>
 <br>
